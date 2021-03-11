@@ -1,155 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/0053d48e1e.js" crossorigin="anonymous"></script>
-    <title>Javascript Technical Page</title>
-  </head>
+	<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/0053d48e1e.js" crossorigin="anonymous"></script>
+  <title>Javascript Technical Page</title>
+</head>
   <body>
-
-    <!--  Navbar with Bootstrap -->
-<div class="sticky-top">
-    <nav id="navbar" class="nav navbar-expand-md navbar-dark bg-dark fixed-left">
-   <div class="navbar-brand"><i class="fab fa-js-square"> JavaScript</i></div>
-        <ul class="nav navbrand">
-        <li><a href="#introduction" class="nav-link">Introduction</a></li>
-        <li><a href="#hello-world" class="nav-link">Hello World</a></li>
-        <li><a href="#variables" class="nav-link">Variables</a></li>
-        <li><a href="#variable-naming" class="nav-link">Variable Naming</a></li>
-        <li><a href="#numbers" class="nav-link">Numbers</a></li>
-      </ul>
-      </div>
-    </div>
-    </nav>
-
-
-
-  <!-- Main Section -->
-  <div class="flex-column"></div>
-    <main id="main-doc">
-      <section class="main-section" id="introduction">
-        <header><h2>Introduction</h2></header>
-        <p>
-          What <em>is</em> Javascript? Javascript was initially created to "make
-          web pages alive". The programs in this language are called
-          <em>scripts</em>
-        </p>
-        <p>
-          They can be written right in a web page's HTML and run automatically
-          as the page loads
-        </p>
-        <p>
-          Scripts are provided and executed as plain text. They don't need
-          specialist preparation or compilation to run.
-        </p>
-
-        <div class="call-out-box">
-          <h3>Interesting Fact about <u>Java</u>Script</h3>
-          <p>
-            When Javascript was created, it initially had another name:
-            "LiveScript". But Java was very popular at that time, so it was
-            decided that positioning a new language as a "younger brother" of
-            Java would help. However Javascript has "grown up" and no longer has
-            any relation to Java at all.
-          </p>
+    <!--  Sidebar -->
+    <nav id="sidebar" class="nav navbar-expand-md navbar-dark bg-dark fixed-left">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <div class="logo">
+          <i class="fab fa-js-square"> JavaScript</i>
         </div>
-        <p>There are <em>three</em> great things things about Javascript <ul>
-            <li>Full integration with HTML/CSS</li>
-            <li>Simple things can be done simply</li>
-            <li>Support all major browsers and enabled by default</li>
-        </ul> Javascript is the only browser technology that combines these three things. </p>
-
-      </section>
-
-
-      <section class="main-section" id="hello-world">
-        <header><h2>Hello, World!</h2></header>
-        <p>
-Javascript programs can be inserted almost anywhere into inline an HTML document using the &lt;script&gt; tag
-        </p>
-        <code> &lt;script&gt; <p>
-            alert( 'Hello, world!' );</p>
-            &lt;/script&gt;</code>
-
-    <p>This calls an alert on the browser. The browser will automatically play this. However <em>do not</em> do this.</p>
-    <p>Rather Javascript is linked similarally to how css style sheets .css are linked. However this is for Javascript code is linked with a .js file.</p>
-    <code> &lt;script src ="script_path.js"&gt;&lt;/script&gt;</code>
-    <p>   If you want to attach several scripts, use multiple tags:
- </p>   <p><code> &lt;script src ="script_path1.js"&gt;&lt;/script&gt;</code> </p>
- </p>   <p><code> &lt;script src ="script_path2.js"&gt;&lt;/script&gt;</code> </p>
- </p>   <p><code> &lt;script src ="script_path3.js"&gt;&lt;/script&gt;</code> </p>
-      </section>
-      <p>This reduces traffic and makes page load faster.</p>
-      <section class="main-section" id="variables">
-        <header><h2>Variables</h2></header>
-        <p>
-Variables are "storage containers" for data in your code. Until recently there was only one way to create a variable in Javascript. the <em>var</em> statement. But in the newest Javascript versions we have two more ways. <em>let</em> and <em>const</em>
-        </p>
-        <p>
-           We can use these variables to store goodies, visitors and other data. 
-        </p>
-        <p>The statement below creates (in other words: <em>declares</em>) a variable for the name "message</p>
-        <code> <span class="keyword">let message</span> </code>
-        <p>Now, we can put some data into it by using the assignment operator <code>=</code></p>
-     <p>
-         <code> <span class="keyword">Let</span> message;</code>
-     </p>
-     <p><code>message = 'Hello'; // store the string</code></p>
-     <p>The string is now saved into the memory associated with the variable.</p>
-     <p>
-        <code> <span class="keyword">Let</span> message;</code>
-    </p>
-    <p><code>message = 'Hello'; // store the string</p> </code>
-    <p><code>alert(message); // shows the variable content</code></p>
-<p>To be concise, we can combine the variable declation into a single line.</p>
-<p><code><span class="keyword">Let</span> message = 'Hello'; // store the string</p></code>
-    <p><code>alert(message); // shows the variable content</code></p>
-    <p>With multiline variants use</p>
-    <p><code><span class="keyword">let</span> user = 'John';</code></p>
-    <p><code>age = 25;</code></p>
-    <p><code>message = 'Hello';</code></p>
-    </section>
-      <section class="main-section" id="variable-naming">
-        <header><h2>Variable Naming</h2></header>
-        <p>
-There are two limitations on variable names in Javascript
-<ol>
-    <li>The name must contain only letters, digits, or the symbols <code>$</code> and <code>_</code></li>.
-    <li>The first character must not be a digit</li>
-</ol>   </p>
-<p>Examples of valid names:
-    <ul>
-        <li><code><span class="keyword">let</span> userName;</code></li>
-        <li><code><span class="keyword">let</span> test123;</code></li>
-    </ul>
-</p>
-<p>When a name contains multiple words, camelCase is commonly used. The first word is lowercase and every word after it has a Capital letter for the first letter</p>
-<div class="call-out"><h3>Case Matters</h3>
-<p>Variable named <span class="keyword">apple</span> and <span class="keyword">AppLE</span> are two different variables</p></div>      
-</section>
-      <section class="main-section" id="numbers">
-        <header><h2>Numbers</h2></header>
-        <p>
-Numbers are either with decimals or without demicals. Extra large or extra small numbers can be written with exponent notations. Integers (numbers without a period or exponent notation) are accurate up to 15 digits. The maximum number of decimals is 17. 
-        </p>
-        <p>Never write a number with a leading zero (like 07)  </p>
-        <div class="call-out"> <p> <strong> WARNING !!</strong></p>    
-<p>JavaScript uses the + operator for both addition and concatenation.</p>
-<p>Numbers are added. Strings are concatenated.</p>
-            </div>
-      </section>
-    </main>
-
-  </body>
-<footer>
-      <p>Technical documentation and copy were sourced from &copy; of, <a href="https://javascript.info">Javascript.info</a>, <a href="https://www.theodinproject.com/lessons/fundamentals-part-1">The Odin Project</a>, <a href="https://www.w3schools.com/js/js_numbers.asp">W3 Schools</a></li>
-          </ul>
+      </a>
+      <!-- Nav -->
+      <ul class="list-unstyled components">
+        <li>
+          <a href="#introduction" class="nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#hello-world" class="nav-link">Hello World</a>
+        </li>
+        <li>
+          <a href="#variables" class="nav-link">Variables</a>
+        </li>
+        <li>
+          <a href="#variable-naming" class="nav-link">Variable Naming</a>
+        </li>
+        <li>
+          <a href="#numbers" class="nav-link">Numbers</a>
+        </li>
+      </ul>
+    </nav>
+  
+      <!-- Main Section -->
+      <main id="main-doc">
+        <section class="main-section">
+          <header>
+            <h2>Introduction</h2>
+          </header>
+          <p>
+        What 
+            <em>is</em> Javascript? Javascript was initially created to "make
+        web pages alive". The programs in this language are called
+        
+            <em>scripts</em>
+          </p>
+          <p>
+        They can be written right in a web page's HTML and run automatically
+        as the page loads
       </p>
-</footer>
+          <p>
+        Scripts are provided and executed as plain text. They don't need
+        specialist preparation or compilation to run.
+      </p>
+          <div class="call-out-box">
+            <h5>Interesting Fact about 
+              <u>Java</u>Script
+            </h5>
+            <p>
+          When Javascript was created, it initially had another name:
+          "LiveScript". But Java was very popular at that time, so it was
+          decided that positioning a new language as a "younger brother" of
+          Java would help. However Javascript has "grown up" and no longer has
+          any relation to Java at all.
+        </p>
+          </div>
+          <p>There are 
+            <em>three</em> great things things about Javascript 
+            <ul>
+              <li>Full integration with HTML/CSS</li>
+              <li>Simple things can be done simply</li>
+              <li>Support all major browsers and enabled by default</li>
+            </ul> Javascript is the only browser technology that combines these three things. 
+          </p>
+        </section>
+        <section class="main-section" id="hello-world">
+          <header>
+            <h2>Hello, World!</h2>
+          </header>
+          <p>
+Javascript programs can be inserted almost anywhere into inline an HTML document using the &lt;script&gt; tag
+      </p>
+          <code> &lt;script&gt;
+        
+            <p>alert( 'Hello, world!' );</p>
+          &lt;/script&gt;
+          </code>
+          <p>This calls an alert on the browser. The browser will automatically play this. However 
+            <em>do not</em> do this.
+          </p>
+          <p>Rather Javascript is linked similarally to how css style sheets .css are linked. However this is for Javascript code is linked with a .js file.</p>
+          <code> &lt;script src ="script_path.js"&gt;&lt;/script&gt;</code>
+          <p>   If you want to attach several scripts, use multiple tags:
+</p>
+          <p>
+            <code> &lt;script src ="script_path1.js"&gt;&lt;/script&gt;</code>
+          </p>
+        </p>
+        <p>
+          <code> &lt;script src ="script_path2.js"&gt;&lt;/script&gt;</code>
+        </p>
+      </p>
+      <p>
+        <code> &lt;script src ="script_path3.js"&gt;&lt;/script&gt;</code>
+      </p>
+    </section>
+    <p>This reduces traffic and makes page load faster.</p>
+    <section class="main-section" id="variables">
+      <header>
+        <h2>Variables</h2>
+      </header>
+      <p>
+Variables are "storage containers" for data in your code. Until recently there was only one way to create a variable in Javascript. the 
+        <em>var</em> statement. But in the newest Javascript versions we have two more ways. 
+        <em>let</em> and 
+        <em>const</em>
+      </p>
+      <p>
+          We can use these variables to store goodies, visitors and other data. 
+      </p>
+      <p>The statement below creates (in other words: 
+        <em>declares</em>) a variable for the name "message
+      </p>
+      <code>
+        <span class="keyword">let message</span>
+      </code>
+      <p>Now, we can put some data into it by using the assignment operator 
+        <code>=</code>
+      </p>
+      <p>
+        <code>
+          <span class="keyword">Let</span> message;
+        </code>
+      </p>
+      <p>
+        <code>message = 'Hello'; // store the string</code>
+      </p>
+      <p>The string is now saved into the memory associated with the variable.</p>
+      <p>
+        <code>
+          <span class="keyword">Let</span> message;
+        </code>
+      </p>
+      <p>
+        <code>message = 'Hello'; // store the string
+        </p>
+      </code>
+      <p>
+        <code>alert(message); // shows the variable content</code>
+      </p>
+      <p>To be concise, we can combine the variable declation into a single line.</p>
+      <p>
+        <code>
+          <span class="keyword">Let</span> message = 'Hello'; // store the string
+        </p>
+      </code>
+      <p>
+        <code>alert(message); // shows the variable content</code>
+      </p>
+      <p>With multiline variants use</p>
+      <p>
+        <code>
+          <span class="keyword">let</span> user = 'John';
+        </code>
+      </p>
+      <p>
+        <code>age = 25;</code>
+      </p>
+      <p>
+        <code>message = 'Hello';</code>
+      </p>
+    </section>
+    <section class="main-section" id="variable-naming">
+      <header>
+        <h2>Variable Naming</h2>
+      </header>
+      <p>
+There are two limitations on variable names in Javascript
+
+        <ol>
+          <li>The name must contain only letters, digits, or the symbols 
+            <code>$</code> and 
+            <code>_</code>
+          </li>.
+  
+          <li>The first character must not be a digit</li>
+        </ol>
+      </p>
+      <p>Examples of valid names:
+  
+        <ul>
+          <li>
+            <code>
+              <span class="keyword">let</span> userName;
+            </code>
+          </li>
+          <li>
+            <code>
+              <span class="keyword">let</span> test123;
+            </code>
+          </li>
+        </ul>
+      </p>
+      <p>When a name contains multiple words, camelCase is commonly used. The first word is lowercase and every word after it has a Capital letter for the first letter</p>
+      <div class="call-out-box">
+        <h5>Case Matters</h5>
+        <p>Variable named 
+          <span class="keyword">apple</span> and 
+          <span class="keyword">AppLE</span> are two different variables
+        </p>
+      </div>
+    </section>
+    <section class="main-section" id="numbers">
+      <header>
+        <h2>Numbers</h2>
+      </header>
+      <p>
+Numbers are either with decimals or without demicals. Extra large or extra small numbers can be written with exponent notations. Integers (numbers without a period or exponent notation) are accurate up to 15 digits. The maximum number of decimals is 17. 
+      </p>
+      <p>Never write a number with a leading zero (like 07)  </p>
+      <div class="call-out-box">
+        <p>
+          <strong> WARNING !!</strong>
+        </p>
+        <p>JavaScript uses the + operator for both addition and concatenation.</p>
+        <p>Numbers are added. Strings are concatenated.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</div>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 
-</html>
+<footer>
+  <div class="credits">
+<p>Technical documentation and copy were sourced from &copy; of 
+<a href="https://javascript.info">Javascript.info</a>, 
+<a href="https://www.theodinproject.com/lessons/fundamentals-part-1">The Odin Project</a>, 
+<a href="https://www.w3schools.com/js/js_numbers.asp">W3 Schools</a>
+</li></ul>
+</div></html>
